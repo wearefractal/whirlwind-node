@@ -1,14 +1,14 @@
-![status](https://secure.travis-ci.org/wearefractal/APPNAME.png?branch=master)
+![status](https://secure.travis-ci.org/wearefractal/whirlwind-node.png?branch=master)
 
 ## Information
 
 <table>
 <tr> 
-<td>Package</td><td>APPNAME</td>
+<td>Package</td><td>whirlwind</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>NOTHING HERE YET</td>
+<td>API client for whirlwind</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -19,12 +19,16 @@
 ## Usage
 
 ```coffee-script
-NOTHING HERE YET
+whirlwind = require 'whirlwind'
+
+# Every 10 seconds the client will complete a task
+# Your callback will be invoked each time a token is earned
+whirlwind.consume('your-public-key', 10, [optional callback])
 ```
 
 ## Examples
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+You can view more examples in the [example folder.](https://github.com/wearefractal/whirlwind-node/tree/master/examples)
 
 ## LICENSE
 
